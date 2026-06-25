@@ -1,0 +1,203 @@
+---
+---
+
+// ============================================================
+// Custom styles for "From LeetCode to Learning Systems"
+// Inspired by aman.ai — clean, dense technical content
+// ============================================================
+
+// Typography
+$body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$mono-font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+$root-font-size: 16px;
+$body-line-height: 1.7;
+
+// Colors (aman.ai inspired — clean whites and blues)
+$link-color: #2869e6;
+$link-color-visited: #7251d3;
+$body-text-color: #24292e;
+$body-background-color: #ffffff;
+$sidebar-color: #f5f6fa;
+$border-color: #e1e4e8;
+$code-background-color: #f6f8fa;
+
+// ---- Code blocks ----
+pre.highlight {
+  border-radius: 6px;
+  border: 1px solid $border-color;
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  background-color: $code-background-color;
+}
+
+code {
+  font-family: $mono-font-family;
+  font-size: 0.875em;
+  background-color: $code-background-color;
+  border: 1px solid $border-color;
+  border-radius: 3px;
+  padding: 0.1em 0.4em;
+}
+
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: inherit;
+}
+
+// ---- Tables (like aman.ai's clean tables) ----
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+
+  th {
+    background-color: #f0f3f8;
+    font-weight: 600;
+    text-align: left;
+    padding: 0.6rem 1rem;
+    border: 1px solid $border-color;
+  }
+
+  td {
+    padding: 0.5rem 1rem;
+    border: 1px solid $border-color;
+    vertical-align: top;
+  }
+
+  tr:nth-child(even) {
+    background-color: #fafbfc;
+  }
+}
+
+// ---- Callouts (note/tip/warning boxes) ----
+.callout {
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  border-left: 4px solid;
+
+  p:last-child { margin-bottom: 0; }
+}
+
+// ---- Chapter header badges ----
+.chapter-meta {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+
+  .badge {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+
+    &.badge-eng   { background: #dbeafe; color: #1d4ed8; }
+    &.badge-ml    { background: #dcfce7; color: #166534; }
+    &.badge-hard  { background: #fee2e2; color: #991b1b; }
+    &.badge-med   { background: #fef9c3; color: #854d0e; }
+    &.badge-easy  { background: #f0fdf4; color: #166534; }
+  }
+}
+
+// ---- Sidebar navigation ----
+.side-bar {
+  background-color: $sidebar-color;
+  border-right: 1px solid $border-color;
+
+  .nav-list-item {
+    font-size: 0.875rem;
+  }
+}
+
+// ---- Landing page hero ----
+.hero {
+  padding: 3rem 0 2rem;
+  border-bottom: 1px solid $border-color;
+  margin-bottom: 2rem;
+
+  h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+    color: #1a1a2e;
+  }
+
+  .tagline {
+    font-size: 1.1rem;
+    color: #586069;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-badges {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+}
+
+// ---- Part headers ----
+.part-header {
+  background: linear-gradient(135deg, #f0f3f8 0%, #e8edf5 100%);
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+
+  h2 { margin: 0 0 0.25rem; font-size: 1.25rem; }
+  p  { margin: 0; color: #586069; font-size: 0.9rem; }
+}
+
+// ---- Reading time estimate ----
+.reading-meta {
+  font-size: 0.8rem;
+  color: #6a737d;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+// ---- "Try it" notebook link ----
+.notebook-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #856404;
+  text-decoration: none;
+  margin: 1rem 0;
+
+  &:hover {
+    background: #ffe69c;
+    text-decoration: none;
+  }
+}
+
+// ---- Interview question boxes ----
+.interview-q {
+  background: #f8f9ff;
+  border-left: 3px solid #2869e6;
+  border-radius: 0 6px 6px 0;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+// ---- Print styles ----
+@media print {
+  .side-bar, .search, header { display: none !important; }
+  .main-content { margin: 0 !important; max-width: 100% !important; }
+}
