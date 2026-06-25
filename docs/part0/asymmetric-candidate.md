@@ -133,4 +133,4 @@ It is a bridge book. Every chapter earns its place by connecting both worlds.
 ---
 
 {: .highlight }
-**Next:** [Computational Thinking for ML Interviews →]({% link docs/part0/computational-thinking.md %})
+**Next:** [Computational Thinking for ML Interviews →]({% link docs/part1/chapter01-hashing.md %})
