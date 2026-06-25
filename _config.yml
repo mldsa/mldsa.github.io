@@ -3,7 +3,7 @@ description: "A dual-view interview guide for Algorithms, ML, LLMs, Agents, and 
 author: "Deb Paul"
 github_username: mldsa
 url: "https://mldsa.github.io"
-baseurl: "/learning-systems-from-scratch"
+baseurl: ""
 
 # Theme
 remote_theme: just-the-docs/just-the-docs@v0.10.0
